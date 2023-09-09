@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url(./fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: "pacifico";
+    src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+body {
+    background-image: url(gallery/Untitled-1.jpg);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+* {
+    font-family: "MyriadPro";
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.soore {
+    color: #fcff00;
+    text-shadow: 0 0 30px #f7fa19, 0 0 30px #f7fa19;
+    font-family: "pacifico" !important;
+    letter-spacing: 1px;
+}
+
+.text {
+    letter-spacing: 4px;
+}
+
+.text1 {
+    letter-spacing: 3px;
+}
+
+p {
+    letter-spacing: 6px;
+}
+
+.threads {
+    width: 100% !important;
+    border-radius: 0 !important;
+}
+
+.instagram {
+    width: 100% !important;
+    transition: all 0.3s ease;
+    border-radius: 0 !important;
+}
+
+.instagram:hover {
+    background: linear-gradient(115deg, rgb(249, 206, 52), rgb(238, 42, 123), rgb(98, 40, 215));
+    --contrast-color: #ffdcff;
+    border: 0 !important;
+    transition: all 0.3s ease;
+    color: white !important;
+}
+
+.threads:hover {
+    color: black !important;
+}
+
+.contactme {
+    width: 100% !important;
+}
+
+a {
+    letter-spacing: 7px;
+}
+
+button {
+    border-radius: 0 !important;
+    letter-spacing: 7px;
+}
+
+
+/* start flip card */
+
+.card {
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -390px;
+    margin-left: -120px;
+    float: left;
+    perspective: 500px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 1.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 300px;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+
+/* end flip card */
+
+.part {
+    margin-top: 270px;
+}
